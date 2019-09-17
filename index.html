@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1><span id='tic'>Tic</span> <span id='tac'>Tac</span> Toe</h1>
+    <form id='playGameForm'>
+        <h3>Create A Game</h3>
+        <label for='playerXName'><b>Player X:</b></label>
+        <br>
+        <input type='text' id='playerXName' placeholder=' Player X'>
+        <br>
+        <br>
+        <label>versus AI</label>
+        <label class='switch'>
+            <input type='checkbox' id='aiCheck'>
+            <span class='slider round'></span>
+        </label>
+        <label for='playerOName'><b>Player O:</b></label>
+        <br>
+        <input type='text' id='playerOName' placeholder=' Player O'>
+        <br>
+        <button id='startGame'>Play</button>
+    </form>
+
+    <div id='match'>
+                <table id='scores'>
+                    <tr>
+                        <th id='scoreX'></th>
+                        <th></th>
+                        <th id='scoreO'></th>
+                    </tr>
+                    <tr>
+                        <td id='playerXScore'></td>
+                        <td>-</td>
+                        <td id='playerOScore'></td>
+                    </tr>
+                </table>
+                </div>
+        <div id='gameboard'></div>
+        <p id='displayCurrentPlayer'></p>
+        <p id='winner'></p>
+        <!-- <button id=''>New Game</button> -->
+    </div>
+        <button id='newGame'>New Match</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
